@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #303030;
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -13,14 +13,14 @@ body {
 section {
     padding: 40px 20px;
     margin: 20px;
-    background-color: #fff;
+    background-color: #000000;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #585858;
 }
 
 /* Estilo dos títulos */
 h1, h2, h3 {
-    color: #2c3e50;
+    color: #f1f1f1;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -88,7 +88,7 @@ i {
 }
 
 .fa-github {
-    color: #333;
+    color: #ffffff;
 }
 
 .fa-envelope {
@@ -115,11 +115,11 @@ div a:hover {
 }
 
 .projeto {
-    background-color: #ecf0f1;
+    background-color: #272727;
     padding: 20px;
     border-radius: 8px;
     width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(95, 95, 95, 0.1);
     text-align: center;
 }
 
