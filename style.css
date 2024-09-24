@@ -66,13 +66,31 @@ body.dark-mode .projeto a:hover {
 /* Botão de alternância de tema */
 #theme-toggle {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 12px;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 36px; /* Aumente o tamanho conforme necessário */
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Defina uma largura para o botão */
+    height: 50px; /* Defina uma altura para o botão */
+    border-radius: 50%; /* Torna o botão circular */
+    transition: background-color 0.3s;
+    color: black; /* Define a cor do ícone para preto */
 }
+
+#theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Adiciona um efeito de hover */
+}
+
+/* Estilo para ícones em branco no modo escuro */
+body.dark-mode #theme-toggle {
+    color: white; /* Define a cor do ícone para branco no modo escuro */
+}
+
 
 /* Estilo das seções */
 section {
