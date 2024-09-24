@@ -4,23 +4,86 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #303030;
-    color: #ffffff;
     line-height: 1.6;
+}
+
+/* Light mode */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.light-mode section {
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode h1, body.light-mode h2, body.light-mode h3 {
+    color: #333;
+}
+
+body.light-mode .projeto {
+    background-color: #e0e0e0;
+}
+
+body.light-mode .projeto a {
+    background-color: #3498db;
+    color: #fff;
+}
+
+body.light-mode .projeto a:hover {
+    background-color: #2980b9;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode section {
+    background-color: #303030;
+    box-shadow: 0 4px 8px rgba(88, 88, 88, 0.3);
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: #f1f1f1;
+}
+
+body.dark-mode .projeto {
+    background-color: #272727;
+}
+
+body.dark-mode .projeto a {
+    background-color: #3498db;
+    color: #fff;
+}
+
+body.dark-mode .projeto a:hover {
+    background-color: #2980b9;
+}
+
+/* Botão de alternância de tema */
+#theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /* Estilo das seções */
 section {
     padding: 40px 20px;
     margin: 20px;
-    background-color: #000000;
     border-radius: 8px;
-    box-shadow: 0 4px 8px #585858;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 /* Estilo dos títulos */
 h1, h2, h3 {
-    color: #f1f1f1;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -77,10 +140,12 @@ ul li:before {
 /* Estilo dos ícones */
 i {
     margin-right: 8px;
+    font-size: 35px;
 }
 
 .fa-whatsapp {
     color: #25D366;
+    font-size: 20px;
 }
 
 .fa-linkedin {
@@ -88,11 +153,12 @@ i {
 }
 
 .fa-github {
-    color: #ffffff;
+    color: #000000;
 }
 
 .fa-envelope {
     color: #e74c3c;
+    font-size: 20px;
 }
 
 /* Contatos com ícones */
@@ -115,12 +181,12 @@ div a:hover {
 }
 
 .projeto {
-    background-color: #272727;
     padding: 20px;
     border-radius: 8px;
     width: 250px;
     box-shadow: 0 4px 8px rgba(95, 95, 95, 0.1);
     text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .projeto h3 {
@@ -136,15 +202,9 @@ div a:hover {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
-}
-
-.projeto a:hover {
-    background-color: #2980b9;
 }
 
 a i {
