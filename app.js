@@ -1,12 +1,11 @@
-// script.js
 document.addEventListener('DOMContentLoaded', (event) => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
     const body = document.body;
 
-    const currentTheme = localStorage.getItem('theme') || 'light-mode';
+    const currentTheme = localStorage.getItem('theme') || 'dark-mode';
     body.classList.add(currentTheme);
-    themeIcon.textContent = currentTheme === 'light-mode' ? '🌞' : '🌜';
+    themeIcon.className = currentTheme === 'light-mode' ? 'fas fa-sun' : 'fas fa-moon';
 
     themeToggleBtn.addEventListener('click', () => {
         const isLightMode = body.classList.contains('light-mode');
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         body.classList.toggle('dark-mode', isLightMode);
 
         const newTheme = isLightMode ? 'dark-mode' : 'light-mode';
-        themeIcon.textContent = isLightMode ? '🌜' : '🌞';
+        themeIcon.className = isLightMode ? 'fas fa-moon' : 'fas fa-sun';
         localStorage.setItem('theme', newTheme);
     });
 });
