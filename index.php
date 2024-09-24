@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Andressa</title>
+</head>
+<body>
+    <section>
+        <h1>Olá, seja bem vindo(a) ao meu portfólio!</h1>
+        <p><h3>Meu nome é Andressa Rodrigues de Souza e eu sou desenvolvedora fullstack</h3></p>
+        <img src="Andressa.jpg" alt="">
+        <p>
+            Trabalho com desenvolvimento de sites e aplicações web, usando as ferramentas Laravel, PHP, HTML, CSS, JS, Bootstrap. Sou encantada pelo mundo da tecnologia e uma entusiasta da robótica.
+        </p>
+    </section>
+    
+    <section>
+        <h2>
+            Sobre Mim
+        </h2>
+        <p>
+            Entrei no mundo da tecnologia aos 15 anos quando participei de torneios de robótica e consegui minhas primeiras premiações - FLL: 2º lugar em projeto de pesquisa com classificação para a etapa Mundial. Desde então sou apaixonada por programação e o poder que a tecnologia possui. Estudo Análise e desenvolvimento de sistemas e trabalho com desenvolvimento web desde Março de 2023.
+        </p>
+        <p>
+            <strong>Tecnologias</strong><br>
+            <i class="fab fa-php"></i>
+            <i class="fab fa-laravel"></i>
+            <i class="fab fa-css3"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-bootstrap"></i>
+            <i class="fa-solid fa-database"></i>
+        </p>
+        <p>
+            <strong>Soft Skills</strong>
+            <ul>
+                <li>Resolução de Problemas</li>
+                <li>Comprometimento</li>
+                <li>Rápida Aprendizagem</li>
+                <li>Foco e Atenção aos Detalhes</li>
+                <li>Alta Capacidade de Concentração</li>
+
+            </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Projetos</h2>
+        <div class="projetos">
+            <div class="projeto">
+                <h3>Dízimo Digital</h3>
+                <p>Sistema para gestão financeira de igrejas. <br> Tecnologias usadas: Laravel, Bootstrap, HTML, CSS, JS, MySQL, VsCode</p>
+                <a href="https://link-do-projeto.com" target="_blank">Ver Projeto</a>
+            </div>
+            <div class="projeto">
+                <h3>Sunny Next</h3>
+                <p>Plataforma para organização pessoal. <br> Tecnologias usadas: Laravel, Bootstrap, HTML, CSS, JS, MySQL, VsCode</p>
+                <a href="https://link-do-projeto.com" target="_blank">Ver Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Neurodiversidade</h2>
+        <p>
+            Como autista, tenho um profundo senso de foco e atenção aos detalhes, o que se reflete diretamente nos projetos que desenvolvo. Sou apaixonada por tecnologia e acredito que a neurodiversidade é uma força que me permite enxergar soluções inovadoras. A diversidade cognitiva é algo que fortalece o mundo da tecnologia, e tenho orgulho de ser parte disso.
+        </p>
+    </section>
+
+    <section>
+        <h1>Meus contatos</h1>
+
+        <p>
+            <i class="fa-solid fa-envelope"></i> andressarodrigues.profissional@gmail.com <br><br>
+            <i class="fa-brands fa-whatsapp"></i> (62) 9 9384-7722
+        </p>
+        <div>
+            <a href="https://www.linkedin.com/in/andressa-rodrigues-ds" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Andressards" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+    </section>
+</body>
+</html>

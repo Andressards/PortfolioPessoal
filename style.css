@@ -1,0 +1,178 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo das seções */
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos títulos */
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* Estilo do parágrafo */
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Imagem de perfil */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da lista de soft skills */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-size: 20px;
+}
+
+/* Estilo dos ícones */
+i {
+    margin-right: 8px;
+}
+
+.fa-whatsapp {
+    color: #25D366;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-github {
+    color: #333;
+}
+
+.fa-envelope {
+    color: #e74c3c;
+}
+
+/* Contatos com ícones */
+div a {
+    font-size: 16px;
+    margin: 0 10px;
+    color: inherit;
+    transition: transform 0.3s;
+}
+
+div a:hover {
+    transform: scale(1.2);
+}
+
+/* Estilo dos projetos */
+.projetos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projeto {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.projeto h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    font-size: 16px;
+}
+
+.projeto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.projeto a:hover {
+    background-color: #2980b9;
+}
+
+a i {
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover i {
+    transform: scale(1.2);
+    color: #3498db;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
