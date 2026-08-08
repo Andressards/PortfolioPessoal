@@ -114,43 +114,7 @@
                 <span class="section-tag">Projetos</span>
                 <h2>O que eu já construí</h2>
             </div>
-            <div class="projetos-grid reveal">
-                <article class="projeto-card">
-                    <div class="projeto-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-                    <h3>Dízimo Digital</h3>
-                    <p>Sistema para gestão financeira de igrejas.</p>
-                    <div class="tags">
-                        <span>Laravel</span><span>Bootstrap</span><span>MySQL</span>
-                    </div>
-                    <a href="https://link-do-projeto.com" target="_blank" rel="noopener" class="projeto-link">
-                        Ver Projeto <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </article>
-
-                <article class="projeto-card">
-                    <div class="projeto-icon"><i class="fa-solid fa-sun"></i></div>
-                    <h3>Sunny Next</h3>
-                    <p>Plataforma para organização pessoal.</p>
-                    <div class="tags">
-                        <span>Laravel</span><span>Bootstrap</span><span>MySQL</span>
-                    </div>
-                    <a href="https://link-do-projeto.com" target="_blank" rel="noopener" class="projeto-link">
-                        Ver Projeto <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </article>
-
-                <article class="projeto-card">
-                    <div class="projeto-icon"><i class="fa-solid fa-bullhorn"></i></div>
-                    <h3>Landing Page</h3>
-                    <p>Página para divulgação de um produto de marketing digital.</p>
-                    <div class="tags">
-                        <span>HTML</span><span>CSS</span>
-                    </div>
-                    <a href="https://landingpagemktdigital.netlify.app/" target="_blank" rel="noopener" class="projeto-link">
-                        Ver Projeto <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </article>
-            </div>
+            <div class="projetos-grid reveal" id="projetos-grid"></div>
         </section>
 
         <section id="neurodiversidade" class="section section-alt">
@@ -192,6 +156,14 @@
         <p>&copy; <span id="year"></span> Andressa Rodrigues de Souza. Feito com <i class="fa-solid fa-heart"></i></p>
         <button id="back-to-top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
     </footer>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Imagem anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Próxima imagem"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
 
     <script src="app.js"></script>
 </body>
