@@ -1,108 +1,197 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Portfólio de Andressa Rodrigues de Souza, desenvolvedora fullstack especializada em Laravel, PHP, HTML, CSS, JS, Bootstrap e MySQL.">
+    <meta name="theme-color" content="#8b5cf6">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio Andressa</title>
+    <title>Andressa Rodrigues | Desenvolvedora Fullstack</title>
 </head>
 <body>
-    <section>
-        <button id="theme-toggle">
-            <i id="theme-icon" class="fas fa-sun"></i>
-        </button>
-        
-        <h1>Olá, seja bem vindo(a) ao meu portfólio!</h1>
-        <p><h3>Meu nome é Andressa Rodrigues de Souza e eu sou desenvolvedora fullstack</h3></p>
-        <img src="Andressa.jpg" alt="">
-        <p>
-            Trabalho com desenvolvimento de sites e aplicações web, usando as ferramentas Laravel, PHP, HTML, CSS, JS, Bootstrap e MySQL. Sou encantada pelo mundo da tecnologia e uma entusiasta da robótica.
-        </p>
-    </section>
-    
-    <section>
-        <h2>
-            Sobre Mim
-        </h2>
-        <p>
-            Entrei no mundo da tecnologia aos 15 anos quando participei de torneios de robótica e consegui minhas primeiras premiações - FLL: 2º lugar em projeto de pesquisa com classificação para a etapa Mundial. Desde então sou apaixonada por programação e o poder que a tecnologia possui. Estudo Análise e desenvolvimento de sistemas e trabalho com desenvolvimento web desde Março de 2023.
-        </p>
-        <p>
-            <strong>Tecnologias</strong><br>
-            <i class="fab fa-php"></i>
-            <i class="fab fa-laravel"></i>
-            <i class="fab fa-css3"></i>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-bootstrap"></i>
-            <i class="fa-solid fa-database"></i>
-        </p>
-        <p>
-            <strong>Soft Skills</strong>
-            <ul>
-                <li>Resolução de Problemas</li>
-                <li>Comprometimento</li>
-                <li>Rápida Aprendizagem</li>
-                <li>Foco e Atenção aos Detalhes</li>
-                <li>Alta Capacidade de Concentração</li>
 
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Andressa<span>.</span></a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
-        </p>
-        <p>
-            <strong>Meu Currículo</strong> <br>
-            <a href="Currículo Andressa Rodrigues.pdf.pdf" target="_blank" download>
-                <i class="fa-solid fa-file-pdf"></i> Baixar Currículo PDF
-            </a>
-        </p>
-    </section>
 
-    <section>
-        <h2>Projetos</h2>
-        <div class="projetos">
-            <div class="projeto">
-                <h3>Dízimo Digital</h3>
-                <p>Sistema para gestão financeira de igrejas. <br> Tecnologias usadas: Laravel, Bootstrap, HTML, CSS, JS, MySQL, VsCode</p>
-                <a href="https://link-do-projeto.com" target="_blank">Ver Projeto</a>
-            </div>
-            <div class="projeto">
-                <h3>Sunny Next</h3>
-                <p>Plataforma para organização pessoal. <br> Tecnologias usadas: Laravel, Bootstrap, HTML, CSS, JS, MySQL, VsCode</p>
-                <a href="https://link-do-projeto.com" target="_blank">Ver Projeto</a>
-            </div>
-            <div class="projeto">
-                <h3>Landing Page</h3>
-                <p>Página para divulgação de um produto de marketing digital. <br> Tecnologias usadas: HTML, CSS, VsCode</p>
-                <a href="https://landingpagemktdigital.netlify.app/" target="_blank">Ver Projeto</a>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                    <i id="theme-icon" class="fa-solid fa-moon"></i>
+                </button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section>
-        <h2>Neurodiversidade</h2>
-        <p>
-            Como autista, tenho um profundo senso de foco e atenção aos detalhes, o que se reflete diretamente nos projetos que desenvolvo. Sou apaixonada por tecnologia e acredito que a neurodiversidade é uma força que me permite enxergar soluções inovadoras. A diversidade cognitiva é algo que fortalece o mundo da tecnologia, e tenho orgulho de ser parte disso.
-        </p>
-    </section>
-
-    <section>
-        <h1>Meus contatos</h1>
-
-        <p>
-            <i class="fa-solid fa-envelope"></i> andressarodrigues.profissional@gmail.com <br><br>
-            <i class="fa-brands fa-whatsapp"></i> (62) 9 9384-7722
-        </p>
-        <div>
-            <a href="https://www.linkedin.com/in/andressa-rodrigues-ds" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Andressards" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
+    <header id="home" class="hero">
+        <div class="hero-blob"></div>
+        <div class="hero-content">
+            <div class="hero-text reveal">
+                <p class="hero-hello">Olá, seja bem-vindo(a) 👋</p>
+                <h1>Eu sou <span class="gradient-text">Andressa Rodrigues</span></h1>
+                <h2 class="hero-role">Desenvolvedora Fullstack</h2>
+                <p class="hero-desc">
+                    Trabalho com desenvolvimento de sites e aplicações web usando Laravel, PHP, HTML, CSS, JS, Bootstrap e MySQL. Sou encantada pelo mundo da tecnologia e uma entusiasta da robótica.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="curriculo-andressa-rodrigues.pdf" target="_blank" download class="btn btn-outline">
+                        <i class="fa-solid fa-file-pdf"></i> Baixar Currículo
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/andressa-rodrigues-ds" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Andressards" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:andressarodrigues.profissional@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <img src="Andressa.jpg" alt="Foto de Andressa Rodrigues">
+            </div>
         </div>
+        <a href="#sobre" class="scroll-down" aria-label="Rolar para baixo"><i class="fa-solid fa-chevron-down"></i></a>
+    </header>
 
-    </section>
+    <main>
+        <section id="sobre" class="section">
+            <div class="section-header reveal">
+                <span class="section-tag">Sobre Mim</span>
+                <h2>Minha trajetória</h2>
+            </div>
+            <div class="about-content reveal">
+                <p>
+                    Entrei no mundo da tecnologia aos 15 anos quando participei de torneios de robótica e consegui minhas primeiras premiações — FLL: 2º lugar em projeto de pesquisa, com classificação para a etapa Mundial. Desde então, sou apaixonada por programação e pelo poder que a tecnologia possui. Estudo Análise e Desenvolvimento de Sistemas e trabalho com desenvolvimento web desde março de 2023.
+                </p>
+            </div>
+
+            <div class="soft-skills reveal">
+                <h3>Soft Skills</h3>
+                <div class="chips">
+                    <span class="chip"><i class="fa-solid fa-puzzle-piece"></i> Resolução de Problemas</span>
+                    <span class="chip"><i class="fa-solid fa-handshake"></i> Comprometimento</span>
+                    <span class="chip"><i class="fa-solid fa-graduation-cap"></i> Rápida Aprendizagem</span>
+                    <span class="chip"><i class="fa-solid fa-bullseye"></i> Foco e Atenção aos Detalhes</span>
+                    <span class="chip"><i class="fa-solid fa-brain"></i> Alta Capacidade de Concentração</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-alt">
+            <div class="section-header reveal">
+                <span class="section-tag">Tecnologias</span>
+                <h2>Ferramentas que eu uso</h2>
+            </div>
+            <div class="skills-grid reveal">
+                <div class="skill-card"><i class="fa-brands fa-laravel"></i><span>Laravel</span></div>
+                <div class="skill-card"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+                <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                <div class="skill-card"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
+                <div class="skill-card"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section">
+            <div class="section-header reveal">
+                <span class="section-tag">Projetos</span>
+                <h2>O que eu já construí</h2>
+            </div>
+            <div class="projetos-grid reveal">
+                <article class="projeto-card">
+                    <div class="projeto-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h3>Dízimo Digital</h3>
+                    <p>Sistema para gestão financeira de igrejas.</p>
+                    <div class="tags">
+                        <span>Laravel</span><span>Bootstrap</span><span>MySQL</span>
+                    </div>
+                    <a href="https://link-do-projeto.com" target="_blank" rel="noopener" class="projeto-link">
+                        Ver Projeto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+
+                <article class="projeto-card">
+                    <div class="projeto-icon"><i class="fa-solid fa-sun"></i></div>
+                    <h3>Sunny Next</h3>
+                    <p>Plataforma para organização pessoal.</p>
+                    <div class="tags">
+                        <span>Laravel</span><span>Bootstrap</span><span>MySQL</span>
+                    </div>
+                    <a href="https://link-do-projeto.com" target="_blank" rel="noopener" class="projeto-link">
+                        Ver Projeto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+
+                <article class="projeto-card">
+                    <div class="projeto-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Landing Page</h3>
+                    <p>Página para divulgação de um produto de marketing digital.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span>
+                    </div>
+                    <a href="https://landingpagemktdigital.netlify.app/" target="_blank" rel="noopener" class="projeto-link">
+                        Ver Projeto <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section id="neurodiversidade" class="section section-alt">
+            <div class="highlight-card reveal">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p>
+                    Como autista, tenho um profundo senso de foco e atenção aos detalhes, o que se reflete diretamente nos projetos que desenvolvo. Sou apaixonada por tecnologia e acredito que a neurodiversidade é uma força que me permite enxergar soluções inovadoras. A diversidade cognitiva é algo que fortalece o mundo da tecnologia, e tenho orgulho de ser parte disso.
+                </p>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <div class="section-header reveal">
+                <span class="section-tag">Contato</span>
+                <h2>Vamos conversar?</h2>
+            </div>
+            <div class="contact-grid reveal">
+                <a href="mailto:andressarodrigues.profissional@gmail.com" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>andressarodrigues.profissional@gmail.com</span>
+                </a>
+                <a href="https://wa.me/5562993847722" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>(62) 9 9384-7722</span>
+                </a>
+                <a href="https://www.linkedin.com/in/andressa-rodrigues-ds" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Andressards" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Andressa Rodrigues de Souza. Feito com <i class="fa-solid fa-heart"></i></p>
+        <button id="back-to-top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+    </footer>
 
     <script src="app.js"></script>
 </body>
